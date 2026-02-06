@@ -17,6 +17,7 @@ IFS='.-' read -r major minor patch rest <<< "$version"
 major_version="$major"
 major_minor_version="$major.$minor"
 
+git add .
 git commit -m "chore: release v$version" || echo "No changes to commit"
 git tag "$version" || echo "Tag $version already exists"
 
