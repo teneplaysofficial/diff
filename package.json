@@ -1,7 +1,7 @@
 {
   "name": "diff",
   "displayName": "Diff Sentinel",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Fail CI when generated or formatted files are not committed",
   "packageManager": "pnpm@10.28.2",
