@@ -9,7 +9,7 @@
   "scripts": {
     "prepare": "husky",
     "release": "bash release.sh",
-    "build": "esbuild src/index.js --bundle --minify --platform=node --format=cjs --outfile=dist/index.js",
+    "build": "esbuild src/index.js --bundle --minify --platform=node --format=esm --banner:js=\"import { createRequire } from 'module'; const require = createRequire(import.meta.url);\" --outfile=dist/index.js",
     "fix": "biome check --write",
     "lint": "biome check"
   },
