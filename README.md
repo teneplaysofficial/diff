@@ -16,9 +16,6 @@ Because CI should:
 - Explain **why it failed**
 - Show **how to fix it**
 
-Perfect — here’s a **clean, precise `README.md` section** that documents **inputs, outputs, and examples**, aligned **exactly** with the `action.yml` you posted.
-No fluff, Marketplace-ready.
-
 ## Inputs
 
 ### `run` **(required)**
