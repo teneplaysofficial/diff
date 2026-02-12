@@ -4,7 +4,7 @@
   "version": "1.0.2",
   "private": true,
   "description": "Fail CI when generated or formatted files are not committed",
-  "packageManager": "pnpm@10.29.1",
+  "packageManager": "pnpm@10.29.2",
   "type": "module",
   "scripts": {
     "prepare": "husky",
