@@ -16,36 +16,31 @@ Because CI should:
 - Explain **why it failed**
 - Show **how to fix it**
 
+<!-- actdocs:start -->
+
 ## Inputs
 
-### `run` **(required)**
+### `run`
 
-Shell commands to execute **before** checking for a git diff.
+Shell commands to run before checking for git diff (newline-separated)
 
-Commands are executed **line-by-line**, and all commands run even if one fails.
+**Required:** `true`
 
-### `fail-message` _(optional)_
+### `fail-message`
 
-Custom message shown when uncommitted changes are detected and the workflow fails.
+Message shown when uncommitted changes are detected
 
-**Default**
+**Default:** `Generated or formatted files are out of date, Please run the required commands locally.`
 
-```txt
-Generated or formatted files are out of date, Please run the required commands locally.
-```
+### `fail-on-command-error`
 
-### `fail-on-command-error` _(optional)_
-
-Whether the action should fail if **any command exits with a non-zero status**.
-
-- `false` → commands may fail, but CI only fails on diff
-- `true` → CI fails if any command fails
+Fail the action if any command fails
 
 **Default:** `false`
 
-### `fail-on-diff` _(optional)_
+### `fail-on-diff`
 
-Whether the action should fail when an uncommitted git diff is detected.
+Fail the action if diff is detected
 
 **Default:** `true`
 
@@ -53,19 +48,21 @@ Whether the action should fail when an uncommitted git diff is detected.
 
 ### `has_diff`
 
-Indicates whether an uncommitted git diff was detected (`true`/`false`).
+Whether an uncommitted git diff was detected (true/false)
 
 ### `changed_files`
 
-List of files that have uncommitted changes.
+Newline-separated list of changed files
 
 ### `diff_count`
 
-Total number of files with uncommitted changes.
+Number of changed files
 
 ### `command_failures`
 
-Number of commands that failed during execution.
+Number of failed commands
+
+<!-- actdocs:end -->
 
 ## Example
 

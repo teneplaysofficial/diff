@@ -30,6 +30,9 @@ importers:
       '@types/node':
         specifier: ^25.2.1
         version: 25.2.1
+      actdocs:
+        specifier: ^1.0.1
+        version: 1.0.1
       esbuild:
         specifier: ^0.27.3
         version: 0.27.3
@@ -277,6 +280,11 @@ packages:
   '@types/node@25.2.1':
     resolution: {integrity: sha512-CPrnr8voK8vC6eEtyRzvMpgp3VyVRhgclonE7qYi6P9sXwYb59ucfrnmFBTaP0yUi8Gk4yZg/LlTJULGxvTNsg==}
 
+  actdocs@1.0.1:
+    resolution: {integrity: sha512-moqg50B6U6fp2O9LID9liJD+QatVAno6N8WSIoKaJAIsvi3Ljcwa3ACAnHuzni+zAFEJ5Pcgv2v7PL1kAj0jRA==}
+    engines: {node: '>=22'}
+    hasBin: true
+
   ansi-escapes@7.3.0:
     resolution: {integrity: sha512-BvU8nYgGQBxcmMuEeUEmNTvrMVjJNSH7RgW24vXexN4Ven6qCvy4TntnvlnwnMLTVlcRQQdbRY8NKnaIoeWDNg==}
     engines: {node: '>=18'}
@@ -291,6 +299,9 @@ packages:
 
   ansilory@2.0.2:
     resolution: {integrity: sha512-cv1htSnPn2mWaGZ4xrUXFlljmMpOeZyjw6XfZEJ++OFZD3vThT7MNjRosNrnIHT76HGRNPgzcbDT1qGmOvwvAg==}
+
+  argparse@2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
@@ -387,6 +398,10 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
+  js-yaml@4.1.1:
+    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
+    hasBin: true
+
   kolory@1.1.2:
     resolution: {integrity: sha512-KVIhCeGn6fZAK+ueIvQ1gA9pCgUjhdAmunvbGji3hQJEuTyj7IA3pRkNaRFB30kEXSNkehg7O/DuJ0SjYPmczQ==}
 
@@ -452,6 +467,9 @@ packages:
     resolution: {integrity: sha512-oMA2dcrw6u0YfxJQXm342bFKX/E4sG9rbTzO9ptUcR/e8A33cHuvStiYOwH7fszkZlZ1z/ta9AAoPk2F4qIOHA==}
     engines: {node: '>=18'}
 
+  rewrite.md@1.0.0:
+    resolution: {integrity: sha512-NN/UoT8QZ/RCnRb30sgQnzV17c4fKOM3OHFdsM5CdwdEFQMkcAPzYrnFLkTsp1T4USzb55KtSaShVqNDtqb62w==}
+
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
 
@@ -490,6 +508,9 @@ packages:
   strip-final-newline@4.0.0:
     resolution: {integrity: sha512-aulFJcD6YK8V1G7iRB5tigAP4TsHBZZrOV8pjV++zdUwmeV8uzbY7yn6h9MswN62adStNZFuCIx4haBnRuMDaw==}
     engines: {node: '>=18'}
+
+  sylog@2.1.1:
+    resolution: {integrity: sha512-7jq1pYT1GCYtdtzoSwwUTymdxwvJz1qMvW12I38ZkFBsGgnTz9+GuHADLl/dooq2HpHY/6SOXo4vm3dUHqUiKg==}
 
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -530,6 +551,9 @@ packages:
   yoctocolors@2.1.2:
     resolution: {integrity: sha512-CzhO+pFNo8ajLM2d2IW/R93ipy99LWjtwblvC1RsoSUMZgyLbYFr221TnSNT7GjGdYui6P459mw9JH/g/zW2ug==}
     engines: {node: '>=18'}
+
+  zod@4.3.6:
+    resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
 
 snapshots:
 
@@ -670,6 +694,15 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
+  actdocs@1.0.1:
+    dependencies:
+      ansilory: 2.0.2
+      figlet: 1.10.0
+      js-yaml: 4.1.1
+      rewrite.md: 1.0.0
+      sylog: 2.1.1
+      zod: 4.3.6
+
   ansi-escapes@7.3.0:
     dependencies:
       environment: 1.1.0
@@ -681,6 +714,8 @@ snapshots:
   ansilory@2.0.2:
     dependencies:
       kolory: 1.1.2
+
+  argparse@2.0.1: {}
 
   braces@3.0.3:
     dependencies:
@@ -792,6 +827,10 @@ snapshots:
 
   isexe@2.0.0: {}
 
+  js-yaml@4.1.1:
+    dependencies:
+      argparse: 2.0.1
+
   kolory@1.1.2: {}
 
   lint-staged@16.2.7:
@@ -858,6 +897,8 @@ snapshots:
       onetime: 7.0.0
       signal-exit: 4.1.0
 
+  rewrite.md@1.0.0: {}
+
   rfdc@1.4.1: {}
 
   shebang-command@2.0.0:
@@ -892,6 +933,10 @@ snapshots:
 
   strip-final-newline@4.0.0: {}
 
+  sylog@2.1.1:
+    dependencies:
+      ansilory: 2.0.2
+
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
@@ -919,3 +964,5 @@ snapshots:
   yaml@2.8.2: {}
 
   yoctocolors@2.1.2: {}
+
+  zod@4.3.6: {}
