@@ -17,49 +17,27 @@ Because CI should:
 - Show **how to fix it**
 
 <!-- actdocs:start -->
-
-## Inputs
-
-### `run`
-
+### Inputs
+####  `run`
 Shell commands to run before checking for git diff (newline-separated)
-
 **Required:** `true`
-
-### `fail-message`
-
+####  `fail-message`
 Message shown when uncommitted changes are detected
-
 **Default:** `Generated or formatted files are out of date, Please run the required commands locally.`
-
-### `fail-on-command-error`
-
+####  `fail-on-command-error`
 Fail the action if any command fails
-
 **Default:** `false`
-
-### `fail-on-diff`
-
+####  `fail-on-diff`
 Fail the action if diff is detected
-
 **Default:** `true`
-
-## Outputs
-
-### `has_diff`
-
+### Outputs
+#### `has_diff`
 Whether an uncommitted git diff was detected (true/false)
-
-### `changed_files`
-
+#### `changed_files`
 Newline-separated list of changed files
-
-### `diff_count`
-
+#### `diff_count`
 Number of changed files
-
-### `command_failures`
-
+#### `command_failures`
 Number of failed commands
 
 <!-- actdocs:end -->
