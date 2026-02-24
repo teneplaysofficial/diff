@@ -31,8 +31,8 @@ importers:
         specifier: ^25.2.1
         version: 25.2.1
       actdocs:
-        specifier: ^1.0.1
-        version: 1.0.1
+        specifier: ^1.1.2
+        version: 1.1.2
       esbuild:
         specifier: ^0.27.3
         version: 0.27.3
@@ -280,8 +280,8 @@ packages:
   '@types/node@25.2.1':
     resolution: {integrity: sha512-CPrnr8voK8vC6eEtyRzvMpgp3VyVRhgclonE7qYi6P9sXwYb59ucfrnmFBTaP0yUi8Gk4yZg/LlTJULGxvTNsg==}
 
-  actdocs@1.0.1:
-    resolution: {integrity: sha512-moqg50B6U6fp2O9LID9liJD+QatVAno6N8WSIoKaJAIsvi3Ljcwa3ACAnHuzni+zAFEJ5Pcgv2v7PL1kAj0jRA==}
+  actdocs@1.1.2:
+    resolution: {integrity: sha512-syco2WQiTXYEHgDDGAO/t7MxR1+pFCeKz9U7WB2rwx3InhBnbC69RkQIEtVUOXU4Hed6/e8oaNwVDAmqV0Uzmg==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -299,6 +299,9 @@ packages:
 
   ansilory@2.0.2:
     resolution: {integrity: sha512-cv1htSnPn2mWaGZ4xrUXFlljmMpOeZyjw6XfZEJ++OFZD3vThT7MNjRosNrnIHT76HGRNPgzcbDT1qGmOvwvAg==}
+
+  arglet@1.1.0:
+    resolution: {integrity: sha512-lnde1dXWO/Om0aJZZP0QMQVMiB6s1V2KL3rRp0LX17BTqO/hNaR640HCU4uj4sbGRnf66JtLCi9N8XDsd1Fs9w==}
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
@@ -694,9 +697,10 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  actdocs@1.0.1:
+  actdocs@1.1.2:
     dependencies:
       ansilory: 2.0.2
+      arglet: 1.1.0
       figlet: 1.10.0
       js-yaml: 4.1.1
       rewrite.md: 1.0.0
@@ -714,6 +718,8 @@ snapshots:
   ansilory@2.0.2:
     dependencies:
       kolory: 1.1.2
+
+  arglet@1.1.0: {}
 
   argparse@2.0.1: {}
 
